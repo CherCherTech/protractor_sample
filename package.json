@@ -1,0 +1,29 @@
+{
+    "name": "cherchertech",
+    "version": "1.0.1",
+    "description": "this is to showcase the package.json tutorial",
+    "main": "index.js",
+    "dependencies": {
+      "jasmine": "^3.2.0"
+    },
+    "devDependencies": {
+      "@types/jasmine": "^2.8.8",
+      "jasmine": "^3.2.0",
+      "protractor": "^5.4.1",
+      "typescript": "^3.0.3"
+    },
+    "scripts": {
+      "preinstall":"npm cache clear",
+      "postinstall":"tsc",
+      "test": "protractor conf.js",
+      "posttest":"rmdir node_modules"
+    },
+    "keywords": [
+      "cherchertech",
+      "package",
+      "tutorial",
+      "protractor"
+    ],
+    "author": "karthiq",
+    "license": "ISC"
+  }
